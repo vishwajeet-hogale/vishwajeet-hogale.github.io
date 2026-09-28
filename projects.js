@@ -17,7 +17,9 @@ window.PROJECTS = [
     subtitle: "Personal project (in progress)",
     description: "A hands-on build-up to vision-language-action models, starting with the PushT pushing task in Hugging Face LeRobot. I wrote my own rollout loop for a pretrained diffusion policy (simulator-to-policy observation mapping, normalization, and the action-chunk queue), instrumented it to count denoising passes and peak GPU memory, and validated it against lerobot-eval on the same seeds (80% vs 70% success). Next: training an ACT policy on a 4GB GPU and evaluating every checkpoint.",
     image: "images/tiny-vla.gif",
-    links: [],
+    links: [
+         {label: "Code", url: "https://github.com/vishwajeet-hogale/Tiny-VLA"}
+    ],
     highlight: false
   },
 
