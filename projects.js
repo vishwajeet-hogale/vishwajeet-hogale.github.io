@@ -13,6 +13,15 @@
 
 window.PROJECTS = [
   {
+    title: "Tiny-VLA: Robot Imitation Learning with LeRobot",
+    subtitle: "Personal project (in progress)",
+    description: "A hands-on build-up to vision-language-action models, starting with the PushT pushing task in Hugging Face LeRobot. I wrote my own rollout loop for a pretrained diffusion policy (simulator-to-policy observation mapping, normalization, and the action-chunk queue), instrumented it to count denoising passes and peak GPU memory, and validated it against lerobot-eval on the same seeds (80% vs 70% success). Next: training an ACT policy on a 4GB GPU and evaluating every checkpoint.",
+    image: "images/tiny-vla.gif",
+    links: [],
+    highlight: false
+  },
+
+  {
     title: "AutoClaim AI: Vehicle Damage Segmentation and LLM-Powered Insurance Claims",
     subtitle: "Team project. I trained the segmentation models and designed the LangGraph workflow",
     description: "An end-to-end pipeline that takes a photo of a damaged car, segments the damage at the pixel level (UNet, YOLOv8-seg, and Mask2Former on the CarDD dataset), and turns it into a draft insurance claim. A LangGraph workflow over Gemini, GPT, and Qwen-VL writes the claim letter, damage report, and coverage notes, with a Streamlit app for uploads and LangFuse for tracing each step.",
