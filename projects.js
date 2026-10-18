@@ -22,6 +22,16 @@ window.PROJECTS = [
     ],
     highlight: false
   },
+    {
+    title: "GymDriveVLA: A Tiny Language-Conditioned Driving Policy",
+    subtitle: "Personal project (in progress)",
+    description: "An 11M-parameter vision-language-action policy that drives a car in Gymnasium CarRacing from pixels and a text instruction like \"go fast\" or \"go slow\". I wrote a privileged expert that follows the track centerline with pure pursuit, collected demos with steering noise so the model learns to recover from drift, and trained a ResNet-18 + frozen MiniLM policy by behavior cloning on a MacBook. Debugging closed-loop rollouts exposed a start-state mismatch that left the car crawling; fixing it took the model from 13% to 99% of an unseen track with no off-track steps. Next: evaluating across 20+ held-out tracks and adding \"stay on the inside\" and \"stop at the marker\".",
+    image: "images/gymdrivevla.gif",
+    links: [
+      { label: "Code", url: "https://github.com/vishwajeet-hogale/GymDriveVLA" }
+    ],
+    highlight: false
+  },
 
   {
     title: "AutoClaim AI: Vehicle Damage Segmentation and LLM-Powered Insurance Claims",
