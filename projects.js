@@ -46,23 +46,23 @@ window.PROJECTS = [
   },
 
   {
+    title: "4DoF 3D Dynamic Agent Detection",
+    subtitle: "Personal project (in progress)",
+    description: "A LiDAR-only 3D detector for cars, pedestrians, and cyclists on nuScenes that predicts each agent's 4-DoF pose (x, y, z, yaw) and 3D size. Point clouds are grouped into pillars, encoded with a PointNet-style network, and run through a multi-scale bird's-eye-view backbone with a CenterPoint-style heatmap head.",
+    image: "images/4dof-agent-detection.gif",
+    links: [
+      { label: "Code", url: "https://github.com/vishwajeet-hogale/Hybrid-Scene-Encoder-For-Agent-Detection" }
+    ],
+    highlight: false
+  },
+
+  {
     title: "Hybrid Search Engine for Khoury Research",
     subtitle: "Course project",
     description: "A search engine for Northeastern Khoury research. It scrapes faculty profiles, lab pages, and research topics, then answers natural language questions like \"who works on deep learning?\" with ranked professors and labs. Queries are expanded with related terms from the scraped data, then retrieved with hybrid BM25 plus vector search and reranked. Each stage is compared with Precision@K, Recall@K, and NDCG.",
     image: "images/search-engine.gif",
     links: [
       { label: "Code", url: "https://github.com/vishwajeet-hogale/RAG-based-Search-Engine" }
-    ],
-    highlight: false
-  },
-
-  {
-    title: "Hybrid Scene Encoder for Agent Detection in Autonomous Driving",
-    subtitle: "Personal project (in progress)",
-    description: "A scene encoder that turns raw LiDAR into a bird's-eye-view representation for detecting cars, pedestrians, and other agents. Point clouds are grouped into pillars, encoded with a PointNet-style network, scattered into a BEV feature map, and processed by a 2D convolutional backbone with a CenterPoint-style center head. Camera features and multi-modal fusion are next.",
-    image: "images/hybrid-scene-encoder.gif",
-    links: [
-      { label: "Code", url: "https://github.com/vishwajeet-hogale/Hybrid-Scene-Encoder-For-Agent-Detection" }
     ],
     highlight: false
   },
