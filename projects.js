@@ -48,7 +48,7 @@ window.PROJECTS = [
   {
     title: "4DoF 3D Object Detection",
     subtitle: "Personal project (in progress)",
-    description: "A 3D detector for cars, pedestrians, and cyclists on nuScenes that fuses LiDAR with all six cameras to predict each agent's 4-DoF pose (x, y, z, yaw) and 3D size. LiDAR is encoded as pillars with a PointNet-style network; frozen DINOv2 image features are lifted into the same bird's-eye-view grid using LiDAR-guided depth (BEVFusion-style), then fused and passed through a multi-scale backbone with a CenterPoint-style heatmap head.",
+    description: "A 3D detector for cars, pedestrians, and cyclists on nuScenes that predicts each agent's 4-DoF pose (x, y, z, yaw) and 3D size by fusing LiDAR with all six cameras, following the BEVFusion architecture. LiDAR is encoded as pillars with a PointNet-style network; frozen DINOv2 image features are lifted into the same bird's-eye-view grid with LiDAR-guided depth (Lift-Splat), fused with the LiDAR features, and passed through a multi-scale backbone and a CenterPoint-style heatmap head.",
     image: "images/4dof-agent-detection.gif",
     links: [
       { label: "Code", url: "https://github.com/vishwajeet-hogale/Hybrid-Scene-Encoder-For-Agent-Detection" }
